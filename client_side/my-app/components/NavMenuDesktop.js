@@ -2,24 +2,33 @@ import React, {Component,Fragment} from 'react';
 import {Nav, Navbar} from "react-bootstrap";
 import Link from "next/link";
 
+
 class NavMenuDesktop extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar className="nav-bar sticky-top" variant="light" expand="lg">
-                    <Navbar.Brand>
-                        <img alt="logo" className="nav-logo" src="/navlogo.svg"/>
+                <Navbar className='nav-bar sticky-top' bg="light" expand="lg">
+                    <Navbar.Brand href="#home">
+                        <img className='nav-logo' src='/navlogo.svg' alt='Nav Logo'/>
+
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link className="text-center" >
-                                <Link activeClassName="d-none" href="/">
-                                    <div className="nav-item-div">
-                                        <i className="fa mx-1 fa-home"/>Dashboard
+                            <Nav.Link className='text-center'>
+
+                                <Link href='/' activeclassName='d-none'>
+                                    <div className='nav-item-div' >
+                                        <i className='fa fa-home mx-1'/>Dashboard
+
+
                                     </div>
+
+
                                 </Link>
+
                             </Nav.Link>
+
                             <Nav.Link className="text-center" >
                                 <Link href="/users">
                                     <div className="nav-item-div">
@@ -60,7 +69,9 @@ class NavMenuDesktop extends Component {
                                 </Link>
                             </Nav.Link>
 
+
                         </Nav>
+
                     </Navbar.Collapse>
                 </Navbar>
             </Fragment>
