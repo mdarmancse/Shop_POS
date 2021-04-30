@@ -17,7 +17,9 @@
     "react-bootstrap": "^1.5.2",
     "react-data-table-component": "^6.11.7",
     "react-dom": "16.8.0",
+    "react-slick": "^0.28.1",
     "recharts": "^2.0.9",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.3"
   }
 }

@@ -1,0 +1,30 @@
+.product_name{
+    color: #000000;
+    font-size:14px;
+    font-weight:500;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.product_price{
+    color: #CB4D85;
+    font-size:12px;
+    font-weight:500;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.product_card {
+    border: none !important;
+    border-radius:6px !important;
+    box-shadow: 0 0 8px 0 rgba(57, 78, 234, 0.1);
+    transition: 0.3s;
+    text-decoration: none !important;
+}
+.product_card:hover {
+    box-shadow: 0 0 12px 0 rgba(57, 78, 234, 0.1);
+    text-decoration: none !important;
+    cursor:pointer;
+}
+
+.scroll{
+
+    overflow-y:scroll
+}

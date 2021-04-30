@@ -29,15 +29,15 @@ class ListUser extends Component {
         this.setState({ showEdit:true})
     }
 
-    deleteIconOnClick=()=>{
-
+    deleteIconOnClick=(id)=>{
+        alert(id)
     }
 
-    editIconOnClick=(e)=>{
-            let  id=e.target.getAttribute('data-id').value;
-            alert(id)
-            this.setState({showEdit:true})
-            this.setState({editID:id});
+    editIconOnClick=(id)=>{
+
+           this.handleOpenEdit();
+           this.setState({editID:id});
+
     }
 
 
@@ -71,13 +71,13 @@ class ListUser extends Component {
                 name: 'Delete',
                 selector: 'id',
                 sortable: true,
-                cell: row => <button data-id={row.id} className="btn text-danger"><i className="fa fa-trash-alt"/></button>
+                cell: row => <button onClick={this.deleteIconOnClick.bind(this,row.id)} className="btn text-danger"><i className="fa fa-trash-alt"/></button>
             },
             {
                 name: 'Edit',
                 selector: 'id',
                 sortable: true,
-                cell: row => <button onClick={this.editIconOnClick} data-id={row.id} className="btn text-primary"><i className="fa fa-edit"/></button>
+                cell: row => <button onClick={this.editIconOnClick.bind(this,row.id)}  className="btn text-primary"><i className="fa fa-edit"/></button>
             },
         ];
 
@@ -139,7 +139,7 @@ class ListUser extends Component {
 
                 <Modal animation={false} className="animated zoomIn" show={this.state.showEdit} onHide={this.handleCloseEdit}>
                     <Modal.Header>
-                        <h6>{this.state.editID} Add User </h6>
+                        <h6>{this.state.editID} Edit User </h6>
                     </Modal.Header>
                     <Modal.Body>
                         <label className="form-label">Full Name</label>
