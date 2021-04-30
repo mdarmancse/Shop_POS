@@ -3,7 +3,16 @@ import {Container,Row,Col,Card} from 'react-bootstrap'
 import DataTable from 'react-data-table-component';
 import { AreaChart, Area, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 class ListDashboard extends Component {
+
+
+
     render() {
+
+
+
+
+
+
         return (
             <Fragment>
                 <Container>
@@ -71,8 +80,8 @@ class ListDashboard extends Component {
                                         paginationPerPage={6}
                                         pagination={true}
                                         title="Recent Transaction"
-                                        columns={this.props.dataTableColumn}
-                                        data={this.props.dataTable}/>
+                                        columns={this.props.dataTablecolumns}
+                                        data={this.props.datatabledata}/>
                                 </Card.Body>
                             </Card>
                         </Col>
