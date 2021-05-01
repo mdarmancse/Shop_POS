@@ -18,6 +18,7 @@ a:hover {
     color: #fff !important;
     background-color:#CB4D85 !important;
     border-color:#CB4D85 !important;
+    border-radius: 5px;
 }
 .btn-site:hover{
     background-color:#C23272 !important;

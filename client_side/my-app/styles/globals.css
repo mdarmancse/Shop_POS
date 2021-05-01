@@ -9,6 +9,7 @@
 @import url('images.css');
 @import url('category.css');
 @import url('product.css');
+@import url('transaction.css');
 
 body {
   background-color: #EFF0F4 !important;

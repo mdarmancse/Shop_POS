@@ -196,7 +196,51 @@ class ListTransaction extends Component {
                 product_icon:'/navlogo.svg',
                 product_remarks:'Apple',
             },
-
+            {
+                id: 4,
+                product_name:'Mobile',
+                product_code:'MOB_123',
+                product_category:'Gadgets',
+                product_price:'5000',
+                product_icon:'/navlogo.svg',
+                product_remarks:'Apple',
+            },
+            {
+                id: 1,
+                product_name:'Mobile',
+                product_code:'MOB_123',
+                product_category:'Gadgets',
+                product_price:'5000',
+                product_icon:'/navlogo.svg',
+                product_remarks:'Apple',
+            },
+            {
+                id: 4,
+                product_name:'Mobile',
+                product_code:'MOB_123',
+                product_category:'Gadgets',
+                product_price:'5000',
+                product_icon:'/navlogo.svg',
+                product_remarks:'Apple',
+            },
+            {
+                id: 4,
+                product_name:'Mobile',
+                product_code:'MOB_123',
+                product_category:'Gadgets',
+                product_price:'5000',
+                product_icon:'/navlogo.svg',
+                product_remarks:'Apple',
+            },
+            {
+                id: 1,
+                product_name:'Mobile',
+                product_code:'MOB_123',
+                product_category:'Gadgets',
+                product_price:'5000',
+                product_icon:'/navlogo.svg',
+                product_remarks:'Apple',
+            },
 
 
         ]
@@ -228,14 +272,13 @@ class ListTransaction extends Component {
         return (
             <>
                 <div className='m-4'>
-                    <div className='animated zoomIn container-fluid'>
+
 
 
                     <Row>
 
-
-                        <Col md={8} sm={12}>
-                            <Card scrollable={true} clasName='scroll' style={{ width: '50rem' ,height:'30rem'}}>
+                        <Col  md={8} sm={12}  className='m-0'>
+                            <Card  className='scroll' style={{ width: '50rem' ,height:'30rem'}}>
                                 <Card.Body>
                                     <Col md={12}>
                                     <Row>
@@ -253,7 +296,8 @@ class ListTransaction extends Component {
 
                                     </Row>
                                     </Col>
-                                    <Col md={12}>
+                                    <Col className='container-fluid  ' md={12}>
+
                                         <Row>
                                             {productView}
                                         </Row>
@@ -269,9 +313,117 @@ class ListTransaction extends Component {
 
 
                         </Col>
-                        <Col md={4} sm={12}>
-                            <Card style={{ width: '25rem' ,height:'35rem'}}>
-                                <Card.Body>
+                        <Col md={4} sm={12} >
+                            <Card className='scroll' style={{ width: '27rem' ,height:'30rem'}}>
+                                <Card.Body >
+                                    <div className='cart_head'>
+                                        <h3 className='text-center'>Cart List</h3>
+                                    </div>
+
+                                    <div className='container-fluid m-t-5'>
+                                        <div className='row'>
+                                            <div className='col-4 text-center'>
+
+                                                <img src='/navlogo.svg' className='cart_img'/>
+
+                                            </div>
+
+                                            <div className='col-4 text-center'>
+
+                                                <p className='product_name'>Product Name</p>
+                                                <p className='product_price'>Qty: 02 | 200 Tk</p>
+
+                                            </div>
+
+                                            <div className='col-4 text-center'>
+                                                <div className=''>
+                                                    <button className='cir_cart-btn'><i className="fa fa-plus"/></button>
+                                                    <button className='cir_cart-btn'><i className="fa fa-minus"/></button>
+                                                    <button className='cir_cart-btn'><i className="fa fa-trash-alt"/></button>
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <hr className='bg-secondary'/>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div className='container-fluid m-t-5'>
+                                        <div className='row'>
+                                            <div className='col-4 text-center'>
+
+                                                <img src='/navlogo.svg' className='cart_img'/>
+
+                                            </div>
+
+                                            <div className='col-4 text-center'>
+
+                                                <p className='product_name'>Product Name</p>
+                                                <p className='product_price'>Qty: 02 | 200 Tk</p>
+
+                                            </div>
+
+                                            <div className='col-4 text-center'>
+                                                <div className=''>
+                                                    <button className='cir_cart-btn'><i className="fa fa-plus"/></button>
+                                                    <button className='cir_cart-btn'><i className="fa fa-minus"/></button>
+                                                    <button className='cir_cart-btn'><i className="fa fa-trash-alt"/></button>
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <hr className='bg-secondary'/>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div className='container-fluid m-t-5'>
+                                        <div className='row'>
+                                            <div className='col-4 text-center'>
+
+                                                <img src='/navlogo.svg' className='cart_img'/>
+
+                                            </div>
+
+                                            <div className='col-4 text-center'>
+
+                                                <p className='product_name'>Product Name</p>
+                                                <p className='product_price'>Qty: 02 | 200 Tk</p>
+
+                                            </div>
+
+                                            <div className='col-4 text-center'>
+                                                <div className=''>
+                                                    <button className='cir_cart-btn'><i className="fa fa-plus"/></button>
+                                                    <button className='cir_cart-btn'><i className="fa fa-minus"/></button>
+                                                    <button className='cir_cart-btn'><i className="fa fa-trash-alt"/></button>
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <hr className='bg-secondary'/>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div className='container-fluid text-center'>
+                                        <p className='product_name'>Total Due: 200 TK</p>
+                                        <button className='btn-site text-center'>Confirm Sell</button>
+                                    </div>
+
+
 
 
                                 </Card.Body>
@@ -285,7 +437,7 @@ class ListTransaction extends Component {
 
                     </div>
 
-                </div>
+
             </>
 
         );

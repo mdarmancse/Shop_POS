@@ -1,12 +1,12 @@
 .product_name{
     color: #000000;
-    font-size:14px;
+    font-size:16px;
     font-weight:500;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .product_price{
     color: #CB4D85;
-    font-size:12px;
+    font-size:14px;
     font-weight:500;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -24,7 +24,4 @@
     cursor:pointer;
 }
 
-.scroll{
 
-    overflow-y:scroll
-}
