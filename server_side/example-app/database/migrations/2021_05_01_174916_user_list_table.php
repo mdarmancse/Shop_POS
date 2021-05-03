@@ -17,7 +17,8 @@ class UserListTable extends Migration
 
            $table->bigIncrements('id');
            $table->string('name',200);
-           $table->string('roll',200);
+           $table->string('user_name',255);
+           $table->string('role',200);
            $table->string('last_activity',200);
            $table->string('password',200);
 
