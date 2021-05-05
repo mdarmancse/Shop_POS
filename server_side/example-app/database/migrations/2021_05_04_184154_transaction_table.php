@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ProductListTable extends Migration
+class TransactionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class ProductListTable extends Migration
      */
     public function up()
     {
-        Schema::create('product_list',function (Blueprint $table){
+        Schema::create('transaction_list',function (Blueprint $table){
 
             $table->bigIncrements('id');
+            $table->string('invoice_no',200);
+            $table->string('invoice_date',200);
             $table->string('product_name',200);
-            $table->string('product_code',200);
-            $table->string('product_icon',200);
-            $table->string('product_category',200);
-            $table->string('product_price',200);
-            $table->string('product_remarks',200);
+            $table->string('product_qty',200);
+            $table->string('unit_price',200);
+            $table->string('total_price',200);
+            $table->string('seller_name',200);
 
 
         });
