@@ -28,7 +28,18 @@ Route::get('/selectProductByCategory/{category}',[\App\Http\Controllers\ProductC
 Route::post('/updateProductWithoutImage',[\App\Http\Controllers\ProductController::class,'updateProductWithoutImage']);
 Route::post('/updateProductWithImage',[\App\Http\Controllers\ProductController::class,'updateProductWithImage']);
 
+//Cart
 
+Route::post('/addCart',[\App\Http\Controllers\CartController::class,'addCart']);
+Route::get('/cartItemPlus/{id}/{quantity}/{price}',[\App\Http\Controllers\CartController::class,'cartItemPlus']);
+Route::get('/cartItemMinus/{id}/{quantity}/{price}',[\App\Http\Controllers\CartController::class,'cartItemMinus']);
+Route::get('/removeItem/{id}',[\App\Http\Controllers\CartController::class,'removeItem']);
+Route::get('/cartList/{invoice}',[\App\Http\Controllers\CartController::class,'cartList']);
+
+//Transaction
+Route::get('/cartSell/{invoice}',[\App\Http\Controllers\TransactionController::class,'cartSell']);
+Route::get('/transList',[\App\Http\Controllers\TransactionController::class,'transList']);
+Route::get('/recentTransList',[\App\Http\Controllers\TransactionController::class,'recentTransList']);
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

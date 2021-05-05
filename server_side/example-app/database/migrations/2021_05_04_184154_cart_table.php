@@ -23,6 +23,7 @@ class CartTable extends Migration
             $table->string('unit_price',200);
             $table->string('total_price',200);
             $table->string('seller_name',200);
+            $table->string('product_icon',200);
 
 
         });
